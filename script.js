@@ -15,7 +15,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
 <p class="card__email">${user.email}</p>`;
     item.classList.add('card');
     item.id = user.id;
-    item.setAttribute('href', `./userPage.html?id=${user.id}`);
+    item.setAttribute('href', `./userPage/index.html?id=${user.id}`);
     item.dataset.name = user.name;
     document.querySelector('.cards').append(item);
   })
